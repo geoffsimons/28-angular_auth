@@ -1,18 +1,9 @@
 main {
-  height: calc(100% - 22vw);
-  padding: 3vw;
+  height: calc(100% - 13vw);
+  background: #DDD;
 }
 
-section {
-  width: 95%;
-  margin: 0 auto;
-  min-height: 95%;
-  border: 1vw solid $brand-primary;
-  background: $brand-secondary;
-
-  h2 {
-    background: $brand-primary;
-    color: $white;
-    padding: $gutter-sm;
-  }
+h2 {
+  font-size: 3vw;
+  margin-bottom: $gutter-sm;
 }

@@ -1,4 +1,5 @@
 <section class="login">
+  <h2>sign in.</h2>
   <form class="login-form"
     name="loginForm"
     ng-submit="loginCtrl.login()"
@@ -15,7 +16,16 @@
         ng-minlength="4"
         ng-model="loginCtrl.user.username"
         required>
-      <input type="text" placeholder="email">
+    </div>
+    <div
+      ng-classs="{
+        'error': loginForm.email.$invalid,
+        'success': loginForm.email.$valid
+      }">
+      <input type="email"
+        name="email"
+        placeholder="email"
+        ng-model="loginForm.user.email">
     </div>
 
     <div
@@ -31,8 +41,9 @@
         ng-model="loginCtrl.user.password"
         required>
     </div>
-    <input type="submit"
-      value="login"
+    <button type="submit"
       ng-disabled="loginForm.username.$invalid || loginForm.password.$invalid">
+      sign in
+    </button>
   </form>
 </section>
