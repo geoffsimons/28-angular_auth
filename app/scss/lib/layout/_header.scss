@@ -1,0 +1,15 @@
+@import "../theme/vars";
+
+header {
+  height: 10vw;
+  background: $brand-secondary;
+  text-transform: uppercase;
+  border-top: 1vw solid $brand-primary;
+  border-bottom: 1vw solid $brand-primary;
+
+  h1 {
+    padding-top: 2.5vw;
+    text-align: center;
+    color: $btn-primary;
+  }
+}
