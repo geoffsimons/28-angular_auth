@@ -8,12 +8,12 @@ html, body {
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 200%;
   margin-bottom: $gutter-sm;
 }
 
 h2 {
-  font-size: 3vw;
+  font-size: 150%;
   margin-bottom: $gutter-sm / 2 0;
 }
 
@@ -32,7 +32,7 @@ button {
   padding: 1% 5%;
   background: $btn-primary;
   color: $white;
-  font-size: 2vw;
+  font-size: 100%;
   border: none;
   border-radius: $btn-radius;
   cursor: pointer;
@@ -41,5 +41,11 @@ button {
   &:hover {
     background: $brand-secondary;
     color: $btn-primary;
+  }
+
+  &:disabled {
+    background: $brand-secondary;
+    color: $btn-primary;
+    cursor: inherit;
   }
 }
